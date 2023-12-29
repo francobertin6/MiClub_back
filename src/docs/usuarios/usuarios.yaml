@@ -1,0 +1,55 @@
+paths:
+  /userDB/Post_dbusers:
+    post:
+      summary: registra un usuario en la base de datos
+      tags: 
+      - usuarios
+      responses:
+        "200":
+          description:
+  /userDB/Get_dbusers:
+    get:
+      summary: devuelve todos los usuarios
+      tags:
+      - usuarios
+      responses:
+        "200":
+          description: ----
+  /userDB/LoginUser:
+    get:
+      summary: loguea al usuario que ingresa sus datos
+      tags:
+      - usuarios
+      responses:
+        "200":
+          description: -----
+  /userDB/cookies/set_cookies:
+    post:
+      summary: ingresa el codigo jwt del usuario en una cookie 
+      tags:
+      - usuarios
+      responses:
+        "200":
+          description: -----
+  /userDB/current:
+    get:
+      summary: devuelve los datos del usuario que esta logueado en ese momento
+      tags:
+      - usuarios    
+      responses:
+        "200":
+          description: ------
+  /userDB/changeTypeUser/:typeUser:
+    put:
+      summary: cambia el tipo de usuario de user a premium o viceversa
+      tags:
+      - usuarios
+      responses:
+        "200":
+          description: -------
+  
+  
+  
+
+
+

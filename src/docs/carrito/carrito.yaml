@@ -1,0 +1,49 @@
+paths:
+  /cartsDB/Post_dbcarrito:
+    post:
+      summary: crea un carrito nuevo
+      tags:
+      - carrito
+      responses:
+        "200":
+          description: --------
+  /cartsDB/Get_dbcarrito/:id?:
+    get:
+      summary: devuelve todos los carritos o alguno en especifico 
+      tags:
+      - carrito
+      responses:
+        "200":
+          description: -------
+  /cartsDB/Put_dbcarrito/:cid/product/:pid:
+    put:
+      summary: agregar un producto en carrito 
+      tags:
+      - carrito
+      responses:
+        "200":
+          description: ---------
+  /cartsDB/Put_dbcarrito/:cid/eliminateProduct/:pid:
+    put:
+      summary: eliminar un producto en carrito
+      tags:
+      - carrito
+      responses:
+        "200":
+          description: --------
+  /cartsDB/Put_dbcarrito/purchase:
+    put:
+     summary: finaliza la compra del carrito
+     tags:
+     - carrito
+     responses:
+        "200":
+          description: --------
+  /cartsDB/Delete_dbcarrito/:cid:
+    delete:
+      summary: elimina un carrito entero
+      tags:
+      - carrito
+      responses:
+        "200":
+          description: --------
